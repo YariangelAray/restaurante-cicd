@@ -57,7 +57,7 @@ class Restaurante:
         return [
             mesa
             for mesa, capacidad in sorted(MESAS.items(), key=lambda m: m[1])
-            if capacidad >= personas and mesa not in ocupadas
+            if capacidad > personas and mesa not in ocupadas
         ]
 
     def crear_reserva(self, nombre, correo, fecha, hora, personas):
