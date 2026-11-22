@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h1>Menú del día</h1>
+<table>
+  <tr><th>Plato</th><th>Precio</th></tr>
+  {% for plato in menu %}
+  <tr><td>{{ plato.nombre }}</td><td>${{ "{:,}".format(plato.precio) }}</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

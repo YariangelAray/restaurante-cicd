@@ -1,0 +1,8 @@
+-r requirements.txt
+pytest
+pytest-cov
+flake8
+bandit
+pip-audit
+selenium
+locust

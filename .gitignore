@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+reportes/
+coverage.xml
+.coverage
+.scannerwork/

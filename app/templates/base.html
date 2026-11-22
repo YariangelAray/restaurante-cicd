@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block titulo %}Restaurante El Fogón{% endblock %}</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #faf7f2; color: #2b2b2b; }
+    header { background: #8c2f1b; color: #fff; padding: 16px 32px; }
+    header a { color: #fff; margin-right: 18px; text-decoration: none; }
+    main { max-width: 720px; margin: 24px auto; background: #fff; padding: 24px 32px; border-radius: 8px; }
+    label { display: block; margin-top: 12px; }
+    input { padding: 6px; width: 100%; box-sizing: border-box; }
+    button { margin-top: 16px; padding: 8px 18px; background: #8c2f1b; color: #fff; border: 0; border-radius: 4px; }
+    .error { color: #b00020; }
+    table { width: 100%; border-collapse: collapse; }
+    td, th { border-bottom: 1px solid #ddd; padding: 6px; text-align: left; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Restaurante El Fogón</strong> &nbsp;
+    <a href="/">Menú</a><a href="/reservar">Reservar</a><a href="/reservas">Reservas</a>
+  </header>
+  <main>{% block contenido %}{% endblock %}</main>
+</body>
+</html>

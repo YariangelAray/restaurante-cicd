@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h1 id="confirmacion">¡Reserva confirmada!</h1>
+<p>Código: <strong id="codigo">{{ reserva.codigo }}</strong></p>
+<p>{{ reserva.nombre }}, te esperamos el {{ reserva.fecha }} a las {{ reserva.hora }} en la mesa {{ reserva.mesa }} ({{ reserva.personas }} personas).</p>
+<p>Enviamos la confirmación a {{ reserva.correo }}.</p>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h1>Reservas registradas</h1>
+<table id="tabla-reservas">
+  <tr><th>Código</th><th>Nombre</th><th>Fecha</th><th>Hora</th><th>Mesa</th></tr>
+  {% for r in reservas %}
+  <tr><td>{{ r.codigo }}</td><td>{{ r.nombre }}</td><td>{{ r.fecha }}</td><td>{{ r.hora }}</td><td>{{ r.mesa }}</td></tr>
+  {% else %}
+  <tr><td colspan="5">Todavía no hay reservas.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}
